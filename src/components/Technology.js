@@ -1,39 +1,24 @@
 import React from 'react';
-import './Technology.css'; 
+import './Technology.css';
 
 const Technology = () => {
-  const steps = [
-    {
-      title: 'Shopify, Magento, WooCommerce, and BigCommerce'
-       
-      
-    },
-    {
-      title: 'Stripe and PayPal ',
-      
-    },
-    {
-      title: 'Google Analytics',
-      
-    },
-    {
-      title: 'AWS',
-      
-    },
-    {
-      title: 'React and Node.js',
-      
-    }
+  const technologies = [
+    { heading: 'Native Development', subheading: 'Swift, Kotlin' },
+    { heading: 'Cross-Platform Development', subheading: 'React Native, Flutter' },
+    { heading: 'Backend & APIs', subheading: 'Node.js, Python, Ruby' },
+    { heading: 'Cloud & Hosting', subheading: 'AWS, Google Cloud, Azure' },
+    { heading: 'Databases', subheading: 'MySQL, MongoDB, Firebase' },
+    { heading: 'Latest Trends', subheading: 'AI, ML, AR/VR, Blockchain' }
   ];
 
   return (
-    <div className="how-we-work-section">
-      <h2>Technologies We Use</h2>
-      <div className="steps">
-        {steps.map((step, index) => (
-          <div className="step" key={index}>
-            <div className="icon">{step.icon}</div>
-            <h3>{step.title}</h3>            
+    <div>
+      <h2 className="main-heading">TECHNOLOGIES WE USE</h2> 
+      <div className="circle-container">
+        {technologies.map((tech, index) => (
+          <div className="circle" key={index}>
+            <h3>{tech.heading}</h3>
+            <p>{tech.subheading}</p>
           </div>
         ))}
       </div>

@@ -2,45 +2,38 @@ import React from 'react';
 import './HowWeWork.css';
 
 const HowWeWork = () => {
-  const steps = [
-    {
-      title: 'Discovery and Planning',
-      description: 'We begin by understanding your business requirements and goals. We then create a detailed plan outlining the project scope, timeline, and key features.',
-    },
-    {
-      title: 'Design',
-      description: 'Our team designs user-friendly and visually appealing e-commerce interfaces. We create wireframes and prototypes to illustrate the layout and functionality.',
-    },
-    {
-      title: 'Development',
-      description: 'We build the e-commerce application, integrating essential features like shopping carts, payment gateways, and product management systems.',
-    },
-    {
-      title: 'Testing',
-      description: 'We rigorously test the application to ensure it is functional, secure, and provides a seamless user experience. We identify and fix any issues before launch.',
-    },
-    {
-      title: 'Launch',
-      description: 'We assist with the launch of your e-commerce application, ensuring it is live and fully operational. We provide support to handle any immediate post-launch concerns.',
-    },
-    {
-      title: 'Ongoing Support',
-      description: 'After launch, we offer continued support and maintenance to keep your application running smoothly. We make updates, fix issues, and implement improvements based on user feedback.',
-    },
-  ];
-
   return (
-    <section className="how-we-work">
-      <h2>How We Work</h2>
+    <div className="how-we-work-container">
+      <h2 className="sections-title">How We Work</h2>
+      
       <div className="steps-container">
-        {steps.map((step, index) => (
-          <div className="step-card" key={index}>
-            <h3>{step.title}</h3>
-            <p>{step.description}</p>
-          </div>
-        ))}
+        <div className="step-box">
+          <h3>01</h3>
+          <p>Discovery & Planning</p>
+          <span>We start by understanding your vision, market, and target users to craft a detailed plan for your app development.</span>
+        </div>
+        <div className="step-box">
+          <h3>02</h3>
+          <p>Design & Prototype</p>
+          <span>Our team creates wireframes and prototypes to visualize the app structure and user journey, incorporating your feedback at every stage.</span>
+        </div>
+        <div className="step-box">
+          <h3>03</h3>
+          <p>Development</p>
+          <span>We begin coding, whether for a native, cross-platform, or hybrid app, ensuring all functionalities are in place as per your requirements.</span>
+        </div>
+        <div className="step-box">
+          <h3>04</h3>
+          <p>Testing & Quality Assurance</p>
+          <span>Rigorous testing ensures a bug-free, high-performance app that meets industry standards.</span>
+        </div>
+        <div className="step-box">
+          <h3>05</h3>
+          <p>Launch & Support</p>
+          <span>After the final checks, we help you deploy the app on your chosen platforms and provide ongoing support for updates and new features.</span>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -1,68 +1,71 @@
-import React from 'react';
-import './Content.css';  
+import React from 'react'; 
+import './Content.css';
 
 const Content = () => {
-  const services = [
-    { 
-      heading: "Custom E-commerce Solutions", 
-      description: "Tailored platforms to fit your business needs." },
-    { 
-      heading: "Shopping Cart Integration", 
-      description: "User-friendly and secure carts for smooth transactions." },
-    { 
-      heading: "Payment Gateway Setup", 
-      description: "Integration with various payment methods for secure transactions." },
-    { 
-      heading: "Product Catalog Management", 
-      description: " Easy management of product listings and organization." },
-    { 
-      heading: "Mobile Optimization", 
-      description: "Designs optimized for seamless mobile shopping experiences." },
-    { 
-      heading: "Order Management System", 
-      description: "Tools to track and manage orders and inventory." },
-    { 
-      heading: "User Account Management", 
-      description: "Features for customers to create accounts and save preferences." 
-  },
-  { 
-      heading: "Security Features", 
-      description: "SSL certificates and encryption to protect data and transactions." 
-  },
-  { 
-      heading: "Analytics and Reporting", 
-      description: "Insights into sales and customer behavior to guide decisions." 
-  },
-  { 
-      heading: "Ongoing Support and Maintenance", 
-      description: "Regular updates and support to keep your application running smoothly." 
-  }
-  ];
-
-  return (
-    <div className="content-section">
-      <div className="left-box">
-        <h2 className="left-heading">Why Choose Us?</h2>
-        <p className="content-para">
-        We create custom e-commerce solutions that fit your needs perfectly. Our team uses the latest technologies to build secure and high-performing online stores.
-        We work closely with you throughout the process to ensure everything meets your expectations.
-        With our focus on quality and customer satisfaction, we help you stand out and succeed online.
-        </p>
-      </div>    
-
-      <div className="left-box">
-        <h2 className="left-heading">What We Offer</h2>
-        <div className="box-container">
-          {services.map((service, index) => (
-            <div className="offer-box" key={index}>
-              <h3 className="box-heading">{service.heading}</h3>
-              <p className="box-subheading">{service.description}</p>
+    return (
+        <div className="container">
+            <h2 className="section-title">WHY CHOOSE US?</h2>
+            <p className="description">
+                Our expert team delivers high-quality, user-centric mobile applications across platforms, utilizing cutting-edge technologies tailored to your unique business needs, with ongoing support for lasting success.
+            </p>
+            <div className="content">
+                <div className="left-content">
+                    <div className="feature">
+                        <h3>EXPERTISE ACROSS PLATFORMS</h3>
+                        <p>Whether iOS, Android, or cross-platform, our team has expertise in delivering high-quality mobile applications for a range of industries.</p>
+                    </div>
+                    <div className="feature">
+                        <h3>CUSTOMIZED SOLUTIONS</h3>
+                        <p>We tailor each project to meet your unique requirements, ensuring that the app is both scalable and adaptable as your business grows.</p>
+                    </div>
+                    <div className="feature">
+                        <h3>USER-CENTRIC DESIGN</h3>
+                        <p>Our design process emphasizes user experience, ensuring your app is not only functional but also enjoyable for users to interact with.</p>
+                    </div>
+                    <div className="feature">
+                        <h3>CUTTING-EDGE TECHNOLOGIES</h3>
+                        <p>We stay updated with the latest trends and tools, enabling us to offer state-of-the-art solutions like AI, AR/VR, and Blockchain integration.</p>
+                    </div>
+                    <div className="feature">
+                        <h3>ONGOING SUPPORT</h3>
+                        <p>We’re here for the long haul, providing continuous maintenance, updates, and support even after your app has launched.</p>
+                    </div>
+                </div>
+                <div className="right-content">
+                    <img src="/images/mobile.jpg" alt="mobile" className="responsive-img" />
+                </div>
             </div>
-          ))}
+
+            {/* What We Offer Section */}
+            <div className="offerings-container">
+                <h2 className="section-title">WHAT WE OFFER</h2>
+                <div className="offering-box">
+                    <h3>Concept & Planning</h3>
+                    <p>Every successful app begins with a clear idea. We collaborate closely with you to define your app’s core purpose, target audience, and key features.</p>
+                </div>
+                <div className="offering-box">
+                    <h3>UI/UX Design</h3>
+                    <p>Our focus is on creating a visually appealing and user-friendly app experience, ensuring seamless navigation and alignment with your brand’s identity.</p>
+                </div>
+                <div className="offering-box">
+                    <h3>Development</h3>
+                    <p>Using the latest technologies, we build your app to suit your needs, whether it's native, cross-platform, or hybrid development.</p>
+                </div>
+                <div className="offering-box">
+                    <h3>Testing</h3>
+                    <p>We run extensive tests to ensure functionality, performance, and usability before the app launch.</p>
+                </div>
+                <div className="offering-box">
+                    <h3>Deployment</h3>
+                    <p>Once testing is complete, we submit the app to app stores and conduct final checks for a smooth launch.</p>
+                </div>
+                <div className="offering-box">
+                    <h3>Maintenance & Updates</h3>
+                    <p>Post-launch, we provide ongoing support, implementing updates and fixes to keep your app running efficiently.</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Content;

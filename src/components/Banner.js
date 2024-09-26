@@ -1,28 +1,22 @@
-
 import React from 'react';
 import './Banner.css'; 
 
 const Banner = () => {
   return (
-    <div>      
-      
-      <h1 className="top-heading"><span className="services">SERVICES</span> <br />E-Commerce Applications</h1>
-      <h3 className = "bottom">Welcome to Our E-commerce Solutions !<br></br>
-      </h3>
-      <div className="banner-container">
-        <div className="banner-content">
-          <h1 className="banner-title">Transform Your Ideas into Reality</h1>          
-          <p className="banner-text">
-          At NPNG Tech, We create custom e-commerce applications that help your business succeed online. Our solutions are designed to be user-friendly and effective, with features like secure payment options and intuitive shopping experiences. We use the latest technology to build online stores that look great and work seamlessly, ensuring your customers have a positive shopping experience.
-          </p>
+    <div className="banner">
+      <div className="banner-content">
+        <h1 className="banner-title"> MOBILE APP DEVELOPMENT </h1>
+        <div className="banner-details">
+          <span>Welcome to our Mobile App Development services!<br /> Transform Your Ideas Into Reality</span>
         </div>
-        <div className="banner-graphic">
-          <img
-            src="images/ecom.jpg"
-            alt="Web Development Graphic"
-            className="right-img"
-          />
-        </div>
+        <p className="banner-description">
+        We turn your innovative ideas into fully functional mobile applications that captivate users and meet your business goals.
+
+        </p>
+        <a href="#contact" className="banner-button">LET'S GET IN TOUCH</a>
+      </div>
+      <div className="banner-image">
+        <img src="/images/mobileappdev.png" alt="Technology background" />
       </div>
     </div>
   );

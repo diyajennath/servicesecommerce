@@ -8,28 +8,30 @@ const FAQs = () => {
     setActiveIndex(index === activeIndex ? null : index);
   };
 
-  const faqData = [
-    { 
-      question: "Why is having an e-commerce application important?", 
-      answer: "An e-commerce application helps you reach more customers, streamline sales processes, and manage your online store efficiently, which can boost sales and grow your business." 
-    },
-    { 
-      question: "How do I get started?", 
-      answer: "Contact us to discuss your e-commerce needs. We’ll set up an initial consultation to understand your requirements and provide a plan to get started." 
-    },
-    { 
-      question: "How long does it take to develop an e-commerce application?", 
-      answer: "Development time varies based on the complexity of the project. Generally, it takes a few weeks to several months from initial consultation to launch." 
-    },
-    { 
-      question: "How much does it cost to develop an e-commerce application?", 
-      answer: "Costs depend on the scope and complexity of the application. We provide a detailed quote based on your specific requirements." 
-    },
-    { 
-      question: "Can I update my e-commerce application after it’s launched?", 
-      answer: "Yes, we offer ongoing support and maintenance to update and improve your application as needed." 
-    }
-  ];
+  const faqData = [    
+      { 
+        "question": "Why is mobile app development important for my business?", 
+        "answer": "Mobile apps provide a direct connection to your customers, increase brand visibility, improve customer engagement, and create additional revenue streams through in-app purchases and ads." 
+      },
+      { 
+        "question": "How long does it take to develop a mobile app?", 
+        "answer": "Development time depends on the complexity of the app. Simple apps may take 2-3 months, while more complex ones can take 6-12 months or longer." 
+      },
+      { 
+        "question": "What are the different types of mobile app development?", 
+        "answer": "The three main types are native development (specific to iOS or Android), cross-platform development (using a single codebase for multiple platforms), and hybrid development (a combination of native and web technologies)." 
+      },
+      { 
+        "question": "How much does it cost to develop a mobile app?", 
+        "answer": "The cost varies depending on the app's complexity, features, and platform requirements. We can provide a detailed quote once we understand your specific needs." 
+      },
+      { 
+        "question": "What kind of post-launch support do you offer?", 
+        "answer": "We offer ongoing maintenance and updates to ensure that your app remains compatible with new platform updates, bug fixes, and feature enhancements." 
+      }
+    ]
+    ;
+  
 
   return (
     <div className="faq-section">

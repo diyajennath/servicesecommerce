@@ -1,110 +1,71 @@
-/* General Styles */
-.how-we-work-section {
-    text-align: center;
-    padding: 40px;
+.circle-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; 
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto; 
+  padding-right: 40px; 
+  margin-bottom: 60px;
+}
+
+.main-heading {
+  text-align: center; 
+  font-size: 2.5rem; 
+  font-weight: bold; 
+  margin-bottom: 20px;
+  color: #f94444;
+  margin-top: 120px;
+  letter-spacing: 1.5px;
+  font-family: domaine display, DomaineDisplay;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.circle {
+  width: 150px;
+  height: 250px;
+  border-radius: 50%;
+  background-color:  #232340;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+
+.circle:hover {
+  transform: scale(1.05); 
+  background-color: #f94444; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.circle h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.circle p {
+  margin: 5px 0 0;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+  .circle {
+    flex-basis: calc(33.33% - 40px);
   }
-  
-  .how-we-work-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: rgb(248, 97, 43);
+}
+
+@media (max-width: 767px) {
+  .circle {
+    flex-basis: calc(50% - 40px);
   }
-  
-  /* Flex container for the steps */
-  .steps {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  /* Individual Step */
-  .step {
-    background-color: #f9f9f9;
-    border-radius: 50%;
-    padding: 20px;
-    width: 30%;
-    height: 100%;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease;
-    border: 1px solid orange;
-    
-  }
-  
-  /* Hover effect for the steps */
-  .step:hover {
-    transform: scale(1.05);
-  }
-  
-  .step h3 {
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: rgb(95, 71, 227);
-  }
-  
-  .step .icon {
-    font-size: 2em;
-  }
-  
-  .step p {
-    font-size: 0.9em;
-    color: #666;
-  }
-  
-  /* Media Queries */
-  
-  /* Large screens (Desktops) */
-  @media (min-width: 1200px) {
-    .step {
-      width: 180px;
-      height: 180px;
-    }
-  }
-  
-  /* Medium screens (Tablets) */
-  @media (min-width: 768px) and (max-width: 1199px) {
-    .steps {
-      gap: 30px;
-    }
-  
-    .step {
-      width: 160px;
-      height: 160px;
-    }
-  
-    .how-we-work-section h2 {
-      font-size: 2em;
-    }
-  }
-  
-  /* Small screens (Mobile) */
-  @media (max-width: 767px) {
-    .how-we-work-section h2 {
-      font-size: 1.8em;
-    }
-  
-    .steps {
-      flex-direction: column;
-    }
-  
-    .step {
-      width: 130px;
-      height: 130px;
-      margin-bottom: 20px;
-    }
-  
-    .step h3 {
-      font-size: 1.1em;
-    }
-  
-    .step p {
-      font-size: 0.85em;
-    }
-  }
-  
+}
